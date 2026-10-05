@@ -29,20 +29,19 @@ function Counter() {
         setRunning(false)
     }
     return (
-        <div>
-            <div style={{ marginTop: "100px" }}>
-                <div className="container mt-t rounded border border-dark">
-                    <h1 className='text-center text-danger'>Counter Application</h1>
-                    <h2 className='text-center fw-bolder m-5'>{count}</h2>
-
-                    <div className="d-flex justify-content-center m-5">
-                        <Button class="btn btn-warning m-2"  onClick={start}>Start</Button>
-                        <Button class="btn btn-danger m-2" onClick={stop}>Stop</Button>
-                        <Button class="btn btn-success m-2" onClick={reset}>Reset</Button>
+        <div> 
+            <div style={{ marginTop: "100px" }}> 
+                <div className="container mt-5 rounded border border-dark"> 
+                    <h1 className="text-center text-danger"> Counter Application </h1> 
+                    <h2 className="text-center fw-bolder m-5"> {count} </h2>
+                <div className="d-flex justify-content-center m-5"> 
+                    <Button variant="warning" className="m-2" onClick={start} > Start </Button> 
+                    <Button variant="danger" className="m-2" onClick={stop} > Stop </Button> 
+                    <Button variant="success" className="m-2" onClick={reset} > Reset </Button> 
                     </div>
-                </div>
             </div>
         </div>
+        </div >
     )
 }
 
